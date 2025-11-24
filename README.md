@@ -1,107 +1,149 @@
-# React
+# 🚀 Mahi OS Project
 
-A modern React-based project utilizing the latest frontend technologies and tools for building responsive web applications.
+A modern, high‑performance React + Vite application designed for analytics, system monitoring, and interactive UI experiences.
 
-## 🚀 Features
+This project integrates cutting‑edge frontend technologies including React 18, Vite, Redux Toolkit, Tailwind CSS, Framer Motion, and advanced data visualization tools.
 
-- **React 18** - React version with improved rendering and concurrent features
-- **Vite** - Lightning-fast build tool and development server
-- **Redux Toolkit** - State management with simplified Redux setup
-- **TailwindCSS** - Utility-first CSS framework with extensive customization
-- **React Router v6** - Declarative routing for React applications
-- **Data Visualization** - Integrated D3.js and Recharts for powerful data visualization
-- **Form Management** - React Hook Form for efficient form handling
-- **Animation** - Framer Motion for smooth UI animations
-- **Testing** - Jest and React Testing Library setup
+---
 
-## 📋 Prerequisites
+## ✨ Features
 
-- Node.js (v14.x or higher)
-- npm or yarn
+* **⚛ React 18** – Fast, modern UI rendering
+* **⚡ Vite** – Ultra‑fast dev server & bundler
+* **🗂 Redux Toolkit** – Simplified global state management
+* **🎨 Tailwind CSS** – Utility‑first styling with custom themes
+* **🔀 React Router v6** – Efficient and declarative routing
+* **📊 Data Visualization** – Powered by **D3.js** and **Recharts**
+* **📝 React Hook Form** – Lightweight and performant form handling
+* **🎞 Framer Motion** – Smooth animations & transitions
+* **🧪 Testing Ready** – React Testing Library & Jest setup
 
-## 🛠️ Installation
+---
 
-1. Install dependencies:
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
-   
-2. Start the development server:
-   ```bash
-   npm start
-   # or
-   yarn start
-   ```
+## 📦 Prerequisites
 
-## 📁 Project Structure
+Make sure you have the following installed:
 
-```
-react_app/
-├── public/             # Static assets
-├── src/
-│   ├── components/     # Reusable UI components
-│   ├── pages/          # Page components
-│   ├── styles/         # Global styles and Tailwind configuration
-│   ├── App.jsx         # Main application component
-│   ├── Routes.jsx      # Application routes
-│   └── index.jsx       # Application entry point
-├── .env                # Environment variables
-├── index.html          # HTML template
-├── package.json        # Project dependencies and scripts
-├── tailwind.config.js  # Tailwind CSS configuration
-└── vite.config.js      # Vite configuration
+* **Node.js 14+**
+* **npm** or **yarn**
+
+---
+
+## 🛠️ Installation & Setup
+
+1. **Install dependencies:**
+
+```bash
+npm install
+# or
+yarn install
 ```
 
-## 🧩 Adding Routes
+2. **Start development server:**
 
-To add new routes to the application, update the `Routes.jsx` file:
-
-```jsx
-import { useRoutes } from "react-router-dom";
-import HomePage from "pages/HomePage";
-import AboutPage from "pages/AboutPage";
-
-const ProjectRoutes = () => {
-  let element = useRoutes([
-    { path: "/", element: <HomePage /> },
-    { path: "/about", element: <AboutPage /> },
-    // Add more routes as needed
-  ]);
-
-  return element;
-};
+```bash
+npm start
+# or
+yarn start
 ```
 
-## 🎨 Styling
-
-This project uses Tailwind CSS for styling. The configuration includes:
-
-- Forms plugin for form styling
-- Typography plugin for text styling
-- Aspect ratio plugin for responsive elements
-- Container queries for component-specific responsive design
-- Fluid typography for responsive text
-- Animation utilities
-
-## 📱 Responsive Design
-
-The app is built with responsive design using Tailwind CSS breakpoints.
-
-
-## 📦 Deployment
-
-Build the application for production:
+3. **Build for production:**
 
 ```bash
 npm run build
 ```
 
+---
+
+## 📁 Project Structure
+
+```
+mahi_os_project/
+├── public/                   # Static assets
+├── src/
+│   ├── components/           # Reusable UI components
+│   ├── pages/                # Application pages
+│   ├── utils/                # Helper functions
+│   ├── styles/               # Tailwind & global CSS
+│   ├── App.jsx               # Root component
+│   ├── Routes.jsx            # App routing configuration
+│   └── index.jsx             # Entry point
+├── .env                      # Environment variables
+├── index.html                # Base HTML template
+├── package.json              # Dependencies & scripts
+├── tailwind.config.js        # Tailwind configuration
+└── vite.config.js            # Vite config
+```
+
+---
+
+## 🧭 Routing
+
+To add new routes, edit **Routes.jsx**:
+
+```jsx
+import { useRoutes } from "react-router-dom";
+import Dashboard from "pages/Dashboard";
+import SystemCallMonitor from "pages/system-call-monitor";
+
+const ProjectRoutes = () => {
+  return useRoutes([
+    { path: "/", element: <Dashboard /> },
+    { path: "/monitor", element: <SystemCallMonitor /> },
+  ]);
+};
+```
+
+---
+
+## 🎨 Styling with TailwindCSS
+
+This project uses a fully customized Tailwind setup featuring:
+
+* Forms plugin
+* Typography plugin
+* Aspect Ratio
+* Container Queries
+* Fluid Typography
+* Custom Themes
+* Animations
+
+Global styles and theme variables are located in:
+
+```
+src/styles/tailwind.css
+```
+
+---
+
+## 📱 Responsive Design
+
+The UI is optimized using Tailwind's responsive breakpoints to ensure seamless performance across:
+
+* Desktop
+* Tablet
+* Mobile
+
+---
+
+## 🚀 Deployment
+
+To build for production:
+
+```bash
+npm run build
+```
+
+Deploy the generated `dist/` folder to any static hosting provider such as:
+
+* Vercel
+* Netlify
+* GitHub Pages
+* Cloudflare Pages
+
+---
+
 ## 🙏 Acknowledgments
 
-- Built with [Rocket.new](https://rocket.new)
-- Powered by React and Vite
-- Styled with Tailwind CSS
-
-Built with ❤️ on Rocket.new
+* Powered by **React** and **Vite**
+* Styled using **Tailwind CSS**
